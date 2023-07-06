@@ -16,8 +16,20 @@ def Google_Search(query):
     # This is used to open the default web browser and inputs the url into the address box
     webbrowser.open(url)
 
-# Prompt the user to enter a topic
-topic = input("Enter a topic to search on Google: ")
+# If the user decides to type code, then it will take you straight to the 
+def GitHubCode():
 
-# This is used use the Google_Search function above
-Google_Search(topic)
+    # This link is used to get to the github page of the code
+    url = "https://github.com/MohammedRayed/ProblemAndSolution"
+
+    # This is used to open the default web browser and inputs the url into the address box
+    webbrowser.open(url)
+
+# Prompt the user to enter a topic
+topic = input("Enter a topic to search on Google (if you want to see the code type: code): ")
+
+if topic == 'code':
+    GitHubCode()
+else:
+    # This is used use the Google_Search function above
+    Google_Search(topic)
