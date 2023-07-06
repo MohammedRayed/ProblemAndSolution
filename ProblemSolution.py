@@ -1,5 +1,4 @@
 # Reference: https://docs.python.org/3/library/webbrowser.html
-# 
 # Mohammed Rayed
 
 # This import is used to open web browsers and can open the default web browser.
