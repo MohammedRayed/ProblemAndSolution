@@ -36,12 +36,10 @@ if topic.rstrip().lower() == 'code':
 
     #If the user decides to look at the code then it will link them to the github website
     if choice.rstrip().lower() == 'y':
-
         GitHubCode()
 
     # Else it will google search if they do not pick y
     else:
-
         Google_Search("code")
 
 else:
