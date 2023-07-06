@@ -28,8 +28,22 @@ def GitHubCode():
 # Prompt the user to enter a topic
 topic = input("Enter a topic to search on Google (if you want to see the code type: code): ")
 
-if topic == 'code':
-    GitHubCode()
+# Checks to see if the user wanted to see the solution
+if topic.rstrip().lower() == 'code':
+
+    # Asks the user if they ment to google search or see the code
+    choice = input("Would you like to see the code (Y/N)? ")
+
+    #If the user decides to look at the code then it will link them to the github website
+    if choice.rstrip().lower() == 'y':
+
+        GitHubCode()
+
+    # Else it will google search if they do not pick y
+    else:
+
+        Google_Search("code")
+
 else:
     # This is used use the Google_Search function above
     Google_Search(topic)
